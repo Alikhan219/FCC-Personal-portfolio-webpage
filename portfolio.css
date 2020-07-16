@@ -1,0 +1,244 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: white;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#navbar{
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+     background: #be3144;
+     z-index: 10;
+}
+.nav-list{
+    display: flex;
+    
+}
+
+ul{
+    list-style: none;
+}
+
+
+.nav-list a {
+    display: block;
+    font-size: 2.2rem;
+    padding: 1.1rem;
+    transition: all 0.2s ease-in-out;
+}
+.nav-list a:hover{
+    background-color: #45567d;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+#welcome-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+}
+h1{
+    font-size: 4rem;
+}
+h1, h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    
+}
+#welcome-section > p {
+    font-size: 3rem;
+    font-weight: 200;
+    font-style: italic;
+    color: #be3144;
+}
+
+
+#projects-section{
+    text-align: center;
+    padding: 10rem 1rem;
+    background: #45567d;
+}
+.big {
+    max-width: 640px;
+    margin: 0 auto 6rem auto;
+    border-bottom: 0.2rem solid white;
+    font-size: 2.5rem;
+}
+.projects-grid{
+    display: grid;
+    grid-gap: 2.5rem;
+    
+    
+  
+}
+
+.project {
+    background: #303841;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 2px;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+.project-image {
+    object-fit: cover;
+    height: 88%;
+    width: 100%;
+}
+
+
+
+.project-title {
+    font-size: 2rem;
+    padding-bottom: 0.1rem ;
+    transition: all 0.1s ease-in-out;
+}
+
+.project-title:hover{
+    color: orangered;
+}
+
+.code:hover{
+    color: red;
+}
+
+.code {
+    transition: color 0.3s ease-out;
+      color: orangered;
+     
+    
+}
+
+#show{
+
+
+    background-color: #303841;
+  font-size: 1.6rem;
+  padding: 0.6rem;
+  display: inline-block;
+  text-align: center;
+  margin-top: 4rem;
+  transition:all 0.3s ease-in-out;
+    
+    
+}
+.fas{
+    margin-left: 10px;
+    transition: all 0.2s ease-in-out;
+   
+}
+
+#show:hover{
+  background-color: #be3144;
+  
+}
+
+
+@media screen and (min-width:776px) {
+    .projects-grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (min-width:990px) {
+
+    .projects-grid{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+
+     
+    
+
+#footer{
+    background-color:#303841;
+   
+    height: 80vh;
+    width: 100%;
+}
+
+.my-heading{
+    text-align: center;
+    padding-top: 5rem;
+}
+p{
+    text-align: center;
+    font-style: italic;
+    font-size: 1.2rem;
+}
+.del{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 2rem auto 2rem auto;
+    line-height: 60px;
+    
+}
+
+.kkk{
+    margin-left: 2rem;
+    transition: all 0.3s ease-in-out;
+}
+.kkk:hover{
+    transform: translateY(10px);
+}
+.main{
+   padding: 0 2rem;
+}
+.did{
+    height: 0.5rem;
+    background-color: #be3144;
+}
+
+.main-footer{
+    background-color: #303841;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.then{
+    margin-top: 2rem;
+    width: 100%;
+    margin-left: 7rem;
+    margin-bottom: 10px;
+   
+}
+.when{
+    margin-top: 2rem;
+    width: 100%;
+    margin-left: 7rem;
+    margin-bottom: 35px;
+}
+@media screen and (min-width:786px) {
+    .did{
+        margin-top: -3rem;
+    }
+}
+.fab{
+    margin-right: 6px;
+}
+.fas{
+    margin-right: 6px;
+}
